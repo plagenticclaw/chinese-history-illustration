@@ -1,17 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
-<title id="title">中國史前文化分布示意圖</title><desc id="desc">簡化地圖，標出黃河、長江與六個重要考古文化的大約位置。</desc>
-<defs><linearGradient id="land" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff4dd"/><stop offset="1" stop-color="#f0cfa4"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#6f3f24" flood-opacity=".18"/></filter></defs>
-<rect width="900" height="620" fill="#fbf0dc"/>
-<path d="M196 108 C300 45 434 63 546 100 C674 143 769 228 784 337 C799 446 705 538 579 570 C442 604 277 562 190 476 C91 379 83 177 196 108Z" fill="url(#land)" stroke="#8f5c2f" stroke-width="5" filter="url(#shadow)"/>
-<path d="M182 270 C270 232 358 248 433 282 C512 318 582 316 681 280" fill="none" stroke="#d6a340" stroke-width="16" stroke-linecap="round" opacity=".85"/><text x="512" y="256" font-family="system-ui, sans-serif" font-size="24" fill="#7a4d20">黃河</text>
-<path d="M186 404 C284 430 365 417 457 386 C552 354 648 389 727 430" fill="none" stroke="#3f806b" stroke-width="18" stroke-linecap="round" opacity=".82"/><text x="508" y="430" font-family="system-ui, sans-serif" font-size="24" fill="#2f6656">長江</text>
-<g font-family="system-ui, sans-serif" font-weight="700" font-size="20">
-<g transform="translate(365 270)"><circle r="15" fill="#c6852d"/><text x="24" y="7" fill="#2a1b13">仰韶</text></g>
-<g transform="translate(655 160)"><circle r="15" fill="#8a4fbd"/><text x="24" y="7" fill="#2a1b13">紅山</text></g>
-<g transform="translate(655 430)"><circle r="15" fill="#3f806b"/><text x="24" y="7" fill="#2a1b13">良渚</text></g>
-<g transform="translate(625 488)"><circle r="15" fill="#5a2d1a"/><text x="24" y="7" fill="#2a1b13">河姆渡</text></g>
-<g transform="translate(500 320)"><circle r="15" fill="#222"/><text x="24" y="7" fill="#2a1b13">龍山</text></g>
-<g transform="translate(465 350)"><circle r="15" fill="#9c352a"/><text x="24" y="7" fill="#2a1b13">二里頭</text></g>
-</g>
-<rect x="48" y="42" width="278" height="108" rx="22" fill="#fff8ec" stroke="#d8b77f"/><text x="72" y="82" font-family="system-ui, sans-serif" font-size="26" font-weight="800" fill="#2a1b13">文化分布示意</text><text x="72" y="120" font-family="system-ui, sans-serif" font-size="18" fill="#725b4d">位置為兒童學習用概略標示</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+<title id="title">中國史前考古文化概略分布圖</title>
+<desc id="desc">非按比例、非精確邊界的兒童學習圖，用半透明區域標示仰韶、河姆渡、紅山、良渚、龍山與二里頭的大約分布或位置。</desc>
+<defs>
+  <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+  <style><![CDATA[.label{font-family:system-ui,'Noto Sans TC',sans-serif;font-weight:800;fill:#2a1b13}.small{font-size:18px;font-weight:650;fill:#614b3e}.note{font-size:18px;fill:#725b4d}.river{fill:none;stroke-linecap:round;opacity:.82}.zone{opacity:.56;stroke:#2a1b13;stroke-width:2;stroke-dasharray:8 8}.site{stroke:#2a1b13;stroke-width:4}]]></style>
+</defs>
+<rect width="1000" height="700" fill="#fbf0dc"/>
+<path d="M220 88 C355 38 548 55 690 142 C812 217 883 336 842 462 C803 585 640 648 464 629 C310 612 171 533 126 395 C82 259 99 133 220 88Z" fill="#f4d6ad" stroke="#8f5c2f" stroke-width="5"/>
+<path class="river" d="M165 300 C270 248 380 260 485 305 C585 349 680 326 802 282" stroke="#d6a340" stroke-width="18"/>
+<path class="river" d="M145 465 C272 494 382 475 505 428 C626 382 722 436 860 488" stroke="#3f806b" stroke-width="20"/>
+<text class="label" x="626" y="270" font-size="25">黃河</text><text class="label" x="610" y="470" font-size="25">長江</text>
+<!-- Fuzzy cultural regions, not exact borders -->
+<ellipse class="zone" cx="420" cy="292" rx="178" ry="84" fill="#c6852d"/><text class="label" x="334" y="293" font-size="28">仰韶文化</text><text class="small" x="335" y="322">黃河中上游，約前5000–3000</text>
+<ellipse class="zone" cx="600" cy="350" rx="210" ry="92" fill="#26211d" opacity=".38"/><text class="label" x="586" y="365" font-size="28">龍山文化</text><text class="small" x="585" y="394">黃河中下游，約前3000–1900</text>
+<ellipse class="zone" cx="724" cy="168" rx="142" ry="80" fill="#8a4fbd"/><text class="label" x="678" y="160" font-size="28">紅山文化</text><text class="small" x="654" y="190">遼寧、內蒙古東南部</text>
+<ellipse class="zone" cx="732" cy="470" rx="116" ry="72" fill="#3f806b"/><text class="label" x="682" y="462" font-size="28">良渚文化</text><text class="small" x="660" y="492">長江三角洲，約前3300–2300</text>
+<ellipse class="zone" cx="738" cy="536" rx="88" ry="48" fill="#6ca47d"/><text class="label" x="690" y="546" font-size="26">河姆渡</text><text class="small" x="664" y="574">浙江餘姚/寧波，約前5500–3300</text>
+<g transform="translate(534 392)"><circle class="site" r="14" fill="#9c352a"/><text class="label" x="24" y="8" font-size="26">二里頭</text><text class="small" x="24" y="36">河南偃師/洛陽附近；與夏關係仍有討論</text></g>
+<rect x="44" y="38" width="458" height="118" rx="22" fill="#fff8ec" stroke="#d8b77f"/>
+<text class="label" x="70" y="78" font-size="30">概略分布圖</text>
+<text class="note" x="70" y="112">非按比例；半透明區域不是精確邊界。</text>
+<text class="note" x="70" y="138">二里頭以遺址位置標示，不等同「已證明的夏朝」。</text>
+<g transform="translate(60 618)"><rect width="880" height="42" rx="14" fill="#fff8ec" stroke="#d8b77f"/><text class="note" x="18" y="28">學習提醒：考古文化常跨越大片區域；本圖只幫助孩子建立空間感。</text></g>
 </svg>
