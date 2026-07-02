@@ -35,13 +35,14 @@
       <div class="section-heading compact">
         <p class="eyebrow">可點擊時間線</p>
         <h2>從夏朝到現代</h2>
-        <p>這是較清楚的朝代主線：三國、晉、南北朝分開顯示；五代十國與宋也分開顯示。每一段橫條的寬度按大約年份長度顯示；時間線可左右滑動，點選任何時段可以跳到下方簡介。</p>
+        <p>這是較清楚的朝代主線：周分成西周、東周；春秋和戰國作為東周內部時期平行顯示；三國、晉、南北朝分開顯示；五代十國與宋也分開顯示。每一段橫條的寬度按大約年份長度顯示；時間線可左右滑動，點選任何時段可以跳到下方簡介。</p>
       </div>
       <div class="timeline-scroll" aria-label="按時間長度比例顯示的中國朝代時間線">
         <svg class="scaled-timeline" viewBox="0 0 2420 430" width="2420" height="430" role="img" aria-labelledby="timeline-title timeline-desc">
           <title id="timeline-title">中國朝代比例時間線</title>
-          <desc id="timeline-desc">時間線從夏朝開始，每一段橫條的寬度按大約年份長度顯示。點選時段可跳到下方簡介。</desc>
+          <desc id="timeline-desc">時間線從夏朝開始，每一段橫條的寬度按大約年份長度顯示。春秋和戰國作為東周內部的平行時段顯示。點選時段可跳到下方簡介。</desc>
           <line class="timeline-axis" x1="50" y1="224" x2="2370" y2="224" />
+          <text class="timeline-row-label" x="620" y="158">東周內部時期</text>
           <g class="timeline-tick"><line x1="88.5" y1="216" x2="88.5" y2="232"/><text x="88.5" y="256">前2000</text></g>
           <g class="timeline-tick"><line x1="638.5" y1="216" x2="638.5" y2="232"/><text x="638.5" y="256">前1000</text></g>
           <g class="timeline-tick"><line x1="1188.5" y1="216" x2="1188.5" y2="232"/><text x="1188.5" y="256">0</text></g>
@@ -56,14 +57,32 @@
           <a href="#era-shang" aria-label="約前1600–前1046 商">
             <rect class="period-bar" x="308.5" y="210" width="304.7" height="22" rx="10" fill="#3f806b" />
             <line class="period-leader" x1="460.9" y1="221.0" x2="460.9" y2="228.0" />
-            <text class="period-date" x="460.9" y="260" text-anchor="middle">約前1600–前1046</text>
-            <text class="period-name" x="460.9" y="285" text-anchor="middle">商</text>
+            <text class="period-date" x="460.9" y="214" text-anchor="middle">約前1600–前1046</text>
+            <text class="period-name" x="460.9" y="239" text-anchor="middle">商</text>
           </a>
-          <a href="#era-zhou" aria-label="前1046–前256 周">
-            <rect class="period-bar" x="613.2" y="210" width="434.5" height="22" rx="10" fill="#8a4f2a" />
-            <line class="period-leader" x1="830.5" y1="221.0" x2="830.5" y2="122.0" />
-            <text class="period-date" x="830.5" y="104" text-anchor="middle">前1046–前256</text>
-            <text class="period-name" x="830.5" y="129" text-anchor="middle">周</text>
+          <a href="#era-western-zhou" aria-label="前1046–前771 西周">
+            <rect class="period-bar" x="613.2" y="210" width="151.2" height="22" rx="10" fill="#8a4f2a" />
+            <line class="period-leader" x1="688.8" y1="221.0" x2="670.8" y2="122.0" />
+            <text class="period-date" x="670.8" y="104" text-anchor="middle">前1046–前771</text>
+            <text class="period-name" x="670.8" y="129" text-anchor="middle">西周</text>
+          </a>
+          <a href="#era-eastern-zhou" aria-label="前770–前256 東周">
+            <rect class="period-bar" x="765.0" y="210" width="282.7" height="22" rx="10" fill="#6f3f24" />
+            <line class="period-leader" x1="906.4" y1="221.0" x2="924.4" y2="228.0" />
+            <text class="period-date" x="924.4" y="214" text-anchor="middle">前770–前256</text>
+            <text class="period-name" x="924.4" y="239" text-anchor="middle">東周</text>
+          </a>
+          <a href="#era-spring-autumn" aria-label="前770–前476 春秋">
+            <rect class="period-bar" x="765.0" y="172" width="161.7" height="22" rx="10" fill="#c6852d" />
+            <line class="period-leader" x1="845.9" y1="183.0" x2="845.9" y2="74.0" />
+            <text class="period-date" x="845.9" y="56" text-anchor="middle">前770–前476</text>
+            <text class="period-name" x="845.9" y="81" text-anchor="middle">春秋</text>
+          </a>
+          <a href="#era-warring-states" aria-label="前475–前221 戰國">
+            <rect class="period-bar" x="927.3" y="248" width="139.7" height="22" rx="10" fill="#9c352a" />
+            <line class="period-leader" x1="997.1" y1="259.0" x2="997.1" y2="298.0" />
+            <text class="period-date" x="997.1" y="244" text-anchor="middle">前475–前221</text>
+            <text class="period-name" x="997.1" y="269" text-anchor="middle">戰國</text>
           </a>
           <a href="#era-qin" aria-label="前221–前206 秦">
             <rect class="period-bar" x="1067.0" y="210" width="8.2" height="22" rx="10" fill="#9c352a" />
@@ -74,8 +93,8 @@
           <a href="#era-han" aria-label="前202–220 漢">
             <rect class="period-bar" x="1077.4" y="210" width="232.1" height="22" rx="10" fill="#3f806b" />
             <line class="period-leader" x1="1193.5" y1="221.0" x2="1235.5" y2="228.0" />
-            <text class="period-date" x="1235.5" y="260" text-anchor="middle">前202–220</text>
-            <text class="period-name" x="1235.5" y="285" text-anchor="middle">漢</text>
+            <text class="period-date" x="1235.5" y="214" text-anchor="middle">前202–220</text>
+            <text class="period-name" x="1235.5" y="239" text-anchor="middle">漢</text>
           </a>
           <a href="#era-three-kingdoms" aria-label="220–280 三國">
             <rect class="period-bar" x="1309.5" y="210" width="33.0" height="22" rx="10" fill="#c6852d" />
@@ -86,8 +105,8 @@
           <a href="#era-jin" aria-label="266–420 晉">
             <rect class="period-bar" x="1334.8" y="210" width="84.7" height="22" rx="10" fill="#3f806b" />
             <line class="period-leader" x1="1377.2" y1="221.0" x2="1401.2" y2="272.0" />
-            <text class="period-date" x="1401.2" y="304" text-anchor="middle">266–420</text>
-            <text class="period-name" x="1401.2" y="329" text-anchor="middle">晉</text>
+            <text class="period-date" x="1401.2" y="230" text-anchor="middle">266–420</text>
+            <text class="period-name" x="1401.2" y="255" text-anchor="middle">晉</text>
           </a>
           <a href="#era-northern-southern" aria-label="420–589 南北朝">
             <rect class="period-bar" x="1419.5" y="210" width="93.0" height="22" rx="10" fill="#8a4f2a" />
@@ -98,14 +117,14 @@
           <a href="#era-sui" aria-label="581–618 隋">
             <rect class="period-bar" x="1508.1" y="210" width="20.4" height="22" rx="10" fill="#9c352a" />
             <line class="period-leader" x1="1518.2" y1="221.0" x2="1494.2" y2="272.0" />
-            <text class="period-date" x="1494.2" y="304" text-anchor="middle">581–618</text>
-            <text class="period-name" x="1494.2" y="329" text-anchor="middle">隋</text>
+            <text class="period-date" x="1494.2" y="230" text-anchor="middle">581–618</text>
+            <text class="period-name" x="1494.2" y="255" text-anchor="middle">隋</text>
           </a>
           <a href="#era-tang" aria-label="618–907 唐">
             <rect class="period-bar" x="1528.4" y="210" width="159.0" height="22" rx="10" fill="#3f806b" />
             <line class="period-leader" x1="1607.9" y1="221.0" x2="1627.9" y2="228.0" />
-            <text class="period-date" x="1627.9" y="260" text-anchor="middle">618–907</text>
-            <text class="period-name" x="1627.9" y="285" text-anchor="middle">唐</text>
+            <text class="period-date" x="1627.9" y="214" text-anchor="middle">618–907</text>
+            <text class="period-name" x="1627.9" y="239" text-anchor="middle">唐</text>
           </a>
           <a href="#era-five-dynasties" aria-label="907–960 五代十國">
             <rect class="period-bar" x="1687.4" y="210" width="29.2" height="22" rx="10" fill="#c6852d" />
@@ -116,20 +135,20 @@
           <a href="#era-song" aria-label="960–1279 宋">
             <rect class="period-bar" x="1716.5" y="210" width="175.5" height="22" rx="10" fill="#3f806b" />
             <line class="period-leader" x1="1804.2" y1="221.0" x2="1804.2" y2="228.0" />
-            <text class="period-date" x="1804.2" y="260" text-anchor="middle">960–1279</text>
-            <text class="period-name" x="1804.2" y="285" text-anchor="middle">宋</text>
+            <text class="period-date" x="1804.2" y="214" text-anchor="middle">960–1279</text>
+            <text class="period-name" x="1804.2" y="239" text-anchor="middle">宋</text>
           </a>
           <a href="#era-yuan" aria-label="1271–1368 元">
             <rect class="period-bar" x="1887.6" y="210" width="53.4" height="22" rx="10" fill="#c6852d" />
             <line class="period-leader" x1="1914.2" y1="221.0" x2="1894.2" y2="272.0" />
-            <text class="period-date" x="1894.2" y="304" text-anchor="middle">1271–1368</text>
-            <text class="period-name" x="1894.2" y="329" text-anchor="middle">元</text>
+            <text class="period-date" x="1894.2" y="230" text-anchor="middle">1271–1368</text>
+            <text class="period-name" x="1894.2" y="255" text-anchor="middle">元</text>
           </a>
           <a href="#era-ming" aria-label="1368–1644 明">
             <rect class="period-bar" x="1940.9" y="210" width="151.8" height="22" rx="10" fill="#3f806b" />
             <line class="period-leader" x1="2016.8" y1="221.0" x2="2056.8" y2="228.0" />
-            <text class="period-date" x="2056.8" y="260" text-anchor="middle">1368–1644</text>
-            <text class="period-name" x="2056.8" y="285" text-anchor="middle">明</text>
+            <text class="period-date" x="2056.8" y="214" text-anchor="middle">1368–1644</text>
+            <text class="period-name" x="2056.8" y="239" text-anchor="middle">明</text>
           </a>
           <a href="#era-qing" aria-label="1644–1912 清">
             <rect class="period-bar" x="2092.7" y="210" width="147.4" height="22" rx="10" fill="#8a4f2a" />
@@ -140,14 +159,14 @@
           <a href="#era-republic" aria-label="1912–1949 民國大陸時期">
             <rect class="period-bar" x="2240.1" y="210" width="20.4" height="22" rx="10" fill="#9c352a" />
             <line class="period-leader" x1="2250.3" y1="221.0" x2="2208.3" y2="272.0" />
-            <text class="period-date" x="2208.3" y="304" text-anchor="middle">1912–1949</text>
-            <text class="period-name" x="2208.3" y="329" text-anchor="middle">民國大陸時期</text>
+            <text class="period-date" x="2208.3" y="230" text-anchor="middle">1912–1949</text>
+            <text class="period-name" x="2208.3" y="255" text-anchor="middle">民國大陸時期</text>
           </a>
           <a href="#era-modern" aria-label="1949–今天 現代中國">
             <rect class="period-bar" x="2260.5" y="210" width="42.4" height="22" rx="10" fill="#3f806b" />
             <line class="period-leader" x1="2281.6" y1="221.0" x2="2323.6" y2="228.0" />
-            <text class="period-date" x="2323.6" y="260" text-anchor="middle">1949–今天</text>
-            <text class="period-name" x="2323.6" y="285" text-anchor="middle">現代中國</text>
+            <text class="period-date" x="2323.6" y="214" text-anchor="middle">1949–今天</text>
+            <text class="period-name" x="2323.6" y="239" text-anchor="middle">現代中國</text>
           </a>
         </svg>
       </div>
@@ -164,7 +183,10 @@
         <article id="era-bronze-transition" class="era-card"><p class="era-date">約前2000–前1600</p><h3>早期青銅時代：從晚期新石器到早期王朝</h3><p>你說得對，夏以前和夏商之間應該看到青銅時代的轉折。二里頭文化常被視為中國早期青銅文明和早期國家形成的重要例子，出現大型宮殿區、道路、作坊和青銅禮器。</p><ul><li>重點：青銅器、宮殿中心、手工業分工、權力集中。</li><li>小心：二里頭是否就是「夏」仍是學術討論，適合標成「早期青銅時代／可能與夏相關」。</li></ul></article>
         <article id="era-xia" class="era-card"><p class="era-date">約前2070–前1600</p><h3>夏：傳統記載中的第一個王朝</h3><p>傳統史書把夏視為中國第一個世襲王朝，常與大禹治水、啟建立家天下相連。考古上，河南二里頭文化常被拿來討論是否與夏有關，但學界仍保持謹慎。</p><ul><li>重點：從傳說英雄到王朝政治的轉變。</li><li>小心：夏的年代和考古對應仍有爭議。</li></ul></article>
         <article id="era-shang" class="era-card"><p class="era-date">約前1600–前1046</p><h3>商：甲骨文與青銅文明</h3><p>商代留下甲骨文，是目前能系統閱讀的早期漢字資料之一。殷墟出土的青銅器、王陵、祭祀和占卜材料，讓我們更清楚看到早期國家的權力與信仰。</p><ul><li>重點：文字、青銅器、王權和祖先祭祀。</li><li>代表：殷墟、甲骨卜辭、司母戊鼎等大型青銅器。</li></ul></article>
-        <article id="era-zhou" class="era-card"><p class="era-date">前1046–前256</p><h3>周：封建秩序到百家爭鳴</h3><p>西周建立封建與禮樂秩序；東周時王室衰弱，進入春秋、戰國。各國競爭激烈，政治、軍事和思想快速變化，孔子、老子、墨子、孟子、荀子、韓非等思想家相繼出現。</p><ul><li>重點：周禮、諸侯、鐵器、變法、百家爭鳴。</li><li>小心：這不是一個一直穩定統一的時代。</li></ul></article>
+        <article id="era-western-zhou" class="era-card"><p class="era-date">前1046–前771</p><h3>西周：封建與禮樂秩序</h3><p>西周建立以周王室為中心的封建秩序，透過分封、宗法和禮樂制度維繫貴族社會。</p><ul><li>重點：分封、宗法、禮樂、青銅銘文。</li><li>小心：西周不是現代意義的中央集權國家。</li></ul></article>
+        <article id="era-eastern-zhou" class="era-card"><p class="era-date">前770–前256</p><h3>東周：王室衰弱與諸侯競爭</h3><p>周平王東遷後進入東周。周王室權威逐漸下降，諸侯國力量上升，形成春秋和戰國兩個重要階段。</p><ul><li>重點：諸侯競爭、周王室衰弱、地方強國崛起。</li><li>小心：東周與春秋、戰國不是三個互相接續的王朝；春秋和戰國是東周內部時期。</li></ul></article>
+        <article id="era-spring-autumn" class="era-card"><p class="era-date">前770–前476</p><h3>春秋：霸主政治與禮崩樂壞</h3><p>春秋時期諸侯仍名義上尊周王，但實際政治由強國和霸主主導。孔子生活在這一時代，後來儒家思想深受這段秩序變化影響。</p><ul><li>重點：春秋五霸、諸侯會盟、孔子。</li><li>小心：春秋是東周前半段，不是獨立朝代。</li></ul></article>
+        <article id="era-warring-states" class="era-card"><p class="era-date">前475–前221</p><h3>戰國：變法、戰爭與秦的統一</h3><p>戰國時期各國競爭更激烈，變法、軍事改革和思想爭鳴推動巨大變化。最後秦滅六國，完成大一統。</p><ul><li>重點：戰國七雄、商鞅變法、百家爭鳴。</li><li>小心：戰國延續到前221年秦統一，所以它能解釋秦前的過渡。</li></ul></article>
         <article id="era-qin" class="era-card"><p class="era-date">前221–前206</p><h3>秦：第一次大一統帝國</h3><p>秦始皇統一六國，推行郡縣制，統一文字、度量衡和車軌，修築道路與長城系統。秦朝時間很短，但很多制度影響後來兩千多年。</p><ul><li>重點：中央集權、郡縣制、統一標準。</li><li>小心：秦的強力統治也帶來沉重徭役與反抗。</li></ul></article>
         <article id="era-han" class="era-card"><p class="era-date">前202–220</p><h3>漢：帝國制度穩定與絲綢之路</h3><p>漢朝分西漢、東漢，中間有王莽新朝。漢武帝時國力強盛，對外交流擴大，絲綢之路逐漸形成；儒學成為重要政治思想來源。</p><ul><li>重點：儒學、郡國並行到中央集權、絲綢之路。</li><li>影響：「漢字」「漢族」等名稱都與漢代歷史記憶有關。</li></ul></article>
         <article id="era-three-kingdoms" class="era-card"><p class="era-date">220–280</p><h3>三國：魏、蜀、吳並立</h3><p>東漢滅亡後，中國進入魏、蜀、吳三國對峙。這是一個軍事、人才和地方政權競爭激烈的時代，也因《三國演義》而非常有名。</p><ul><li>重點：分裂、軍事聯盟、政權競爭。</li><li>小心：小說故事和正史記載要分開看。</li></ul></article>
