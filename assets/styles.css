@@ -261,99 +261,44 @@ dd { margin: .35rem 0 0; color: var(--muted); }
 
 
 
+
+
 .timeline-scroll {
   overflow-x: auto;
-  padding: 2.5rem .2rem 3.2rem;
+  padding: 1rem .2rem 2.6rem;
   scrollbar-color: var(--gold) rgba(198,133,45,.14);
 }
 .timeline-scroll::after {
-  content: "← 左右滑動看完整朝代 →";
+  content: "← 左右滑動看完整比例時間線；橫條越長，時代越久 →";
   display: block;
-  margin-top: 1rem;
+  margin-top: .8rem;
   color: var(--muted);
   font-size: .92rem;
   font-weight: 800;
   text-align: center;
 }
-.dynasty-timeline {
-  --timeline-step: 10.5rem;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(16, var(--timeline-step));
-  min-width: max-content;
-  min-height: 18rem;
-  align-items: center;
-  padding: 0 calc(var(--timeline-step) / 2);
+.scaled-timeline {
+  display: block;
+  max-width: none;
+  background: linear-gradient(180deg, rgba(255,248,236,.35), rgba(255,248,236,.72));
+  border-radius: 24px;
 }
-.dynasty-timeline::before {
-  content: "";
-  position: absolute;
-  left: calc(var(--timeline-step) / 2);
-  right: calc(var(--timeline-step) / 2);
-  top: 50%;
-  height: 10px;
-  transform: translateY(-50%);
-  border-radius: 999px;
-  background: linear-gradient(90deg, #6f3f24 0%, #c6852d 28%, #3f806b 58%, #9c352a 100%);
-  box-shadow: 0 10px 26px rgba(82,44,18,.16);
+.timeline-axis {
+  stroke: rgba(111,63,36,.28);
+  stroke-width: 4;
+  stroke-linecap: round;
 }
-.dynasty-timeline a {
-  position: relative;
-  display: grid;
-  justify-items: center;
-  align-content: start;
-  min-height: 8rem;
-  padding: 0 .35rem;
-  text-align: center;
-  text-decoration: none;
-  z-index: 1;
+.timeline-tick line { stroke: rgba(111,63,36,.26); stroke-width: 2; }
+.timeline-tick text { fill: var(--muted); font-size: 13px; font-weight: 800; }
+.period-bar {
+  filter: drop-shadow(0 7px 12px rgba(82,44,18,.16));
+  transition: filter .16s ease, opacity .16s ease;
 }
-.dynasty-timeline a::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: calc(50% - 5px);
-  width: 1.15rem;
-  height: 1.15rem;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: var(--red);
-  border: 6px solid #fff8ec;
-  box-shadow: 0 0 0 3px rgba(156,53,42,.22), 0 8px 20px rgba(82,44,18,.18);
-}
-.dynasty-timeline a::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: calc(50% + .55rem);
-  width: 2px;
-  height: 2.1rem;
-  transform: translateX(-50%);
-  background: rgba(156,53,42,.32);
-}
-.dynasty-timeline a:nth-child(even) {
-  align-content: end;
-  padding-bottom: .1rem;
-}
-.dynasty-timeline a:nth-child(even)::after {
-  top: auto;
-  bottom: calc(50% + .55rem);
-}
-.dynasty-timeline a:hover,
-.dynasty-timeline a:focus-visible {
-  outline: none;
-}
-.dynasty-timeline a:hover strong,
-.dynasty-timeline a:focus-visible strong {
-  color: var(--red);
-  text-decoration: underline;
-}
-.dynasty-timeline span,
-.dynasty-timeline strong,
-.dynasty-timeline small { display: block; max-width: 9.4rem; }
-.dynasty-timeline span { color: var(--red); font-weight: 900; font-size: .78rem; line-height: 1.35; }
-.dynasty-timeline strong { font-family: "Noto Serif TC", serif; font-size: 1.08rem; margin: .25rem 0; color: var(--ink); }
-.dynasty-timeline small { color: var(--muted); font-size: .8rem; line-height: 1.45; }
+a:hover .period-bar,
+a:focus-visible .period-bar { filter: drop-shadow(0 9px 16px rgba(82,44,18,.26)); opacity: .92; }
+.period-leader { stroke: rgba(156,53,42,.42); stroke-width: 2; }
+.period-date { fill: var(--red); font-size: 14px; font-weight: 900; }
+.period-name { fill: var(--ink); font-family: "Noto Serif TC", serif; font-size: 20px; font-weight: 900; }
 .dynasty-details { padding-top: 1rem; }
 .era-grid {
   display: grid;
