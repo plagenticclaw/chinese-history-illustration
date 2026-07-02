@@ -269,7 +269,7 @@ dd { margin: .35rem 0 0; color: var(--muted); }
   scrollbar-color: var(--gold) rgba(198,133,45,.14);
 }
 .timeline-scroll::after {
-  content: "← 左右滑動看完整比例時間線；橫條越長，時代越久 →";
+  content: "← 左右滑動看完整朝代時間線；橫條越長，時代越久 →";
   display: block;
   margin-top: .8rem;
   color: var(--muted);
