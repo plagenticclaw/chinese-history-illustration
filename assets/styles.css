@@ -259,23 +259,79 @@ dd { margin: .35rem 0 0; color: var(--muted); }
 .footer a { color: #f1bd77; font-weight: 800; }
 
 
+
+.timeline-scroll {
+  overflow-x: auto;
+  padding: 1.2rem .2rem 2rem;
+  scrollbar-color: var(--gold) rgba(198,133,45,.14);
+}
+.timeline-scroll::after {
+  content: "← 左右滑動看完整朝代 →";
+  display: block;
+  margin-top: .75rem;
+  color: var(--muted);
+  font-size: .92rem;
+  font-weight: 800;
+  text-align: center;
+}
 .dynasty-timeline {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: .85rem;
+  --timeline-card-width: 13.5rem;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(16, var(--timeline-card-width));
+  gap: 1.15rem;
+  min-width: max-content;
+  padding-top: 3.4rem;
+}
+.dynasty-timeline::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--timeline-card-width) / 2);
+  right: calc(var(--timeline-card-width) / 2);
+  top: 1.55rem;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--brown), var(--gold), var(--jade), var(--red));
+  box-shadow: 0 8px 24px rgba(82,44,18,.12);
 }
 .dynasty-timeline a {
+  position: relative;
   display: block;
-  min-height: 11.5rem;
-  padding: 1rem;
+  min-height: 10.8rem;
+  padding: 1.1rem;
   border-radius: 22px;
-  background: rgba(255,248,236,.9);
-  border: 1px solid rgba(198,133,45,.28);
+  background: rgba(255,248,236,.94);
+  border: 1px solid rgba(198,133,45,.34);
   box-shadow: 0 12px 38px rgba(82,44,18,.08);
   text-decoration: none;
   transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
 }
+.dynasty-timeline a::before {
+  content: "";
+  position: absolute;
+  top: -2.75rem;
+  left: 50%;
+  width: 1.15rem;
+  height: 1.15rem;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: var(--red);
+  border: 6px solid #fff8ec;
+  box-shadow: 0 0 0 3px rgba(156,53,42,.22), 0 8px 20px rgba(82,44,18,.18);
+  z-index: 1;
+}
+.dynasty-timeline a::after {
+  content: "";
+  position: absolute;
+  top: -1.55rem;
+  left: 50%;
+  width: 2px;
+  height: 1.2rem;
+  transform: translateX(-50%);
+  background: rgba(156,53,42,.35);
+}
+.dynasty-timeline a:nth-child(even) { margin-top: 1.7rem; }
+.dynasty-timeline a:nth-child(even)::after { height: 2.9rem; }
 .dynasty-timeline a:hover,
 .dynasty-timeline a:focus-visible {
   transform: translateY(-4px);
@@ -341,7 +397,7 @@ dd { margin: .35rem 0 0; color: var(--muted); }
     box-shadow: var(--shadow);
   }
   .nav-links.open { display: flex; }
-  .two-column, .split-panel, .timeline, .dynasty-timeline, .era-grid, .culture-grid, .legend-row, .concept-grid, .glossary {
+  .two-column, .split-panel, .timeline, .era-grid, .culture-grid, .legend-row, .concept-grid, .glossary {
     grid-template-columns: 1fr;
   }
   .timeline-item { min-height: auto; }
@@ -439,7 +495,6 @@ dd { margin: .35rem 0 0; color: var(--muted); }
   .visual-hero,
   .graphic-section,
   .visual-timeline,
-  .dynasty-timeline,
   .era-grid {
     grid-template-columns: 1fr;
   }
