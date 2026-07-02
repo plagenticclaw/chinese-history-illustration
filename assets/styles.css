@@ -290,7 +290,6 @@ dd { margin: .35rem 0 0; color: var(--muted); }
 }
 .timeline-tick line { stroke: rgba(111,63,36,.26); stroke-width: 2; }
 .timeline-tick text { fill: var(--muted); font-size: 13px; font-weight: 800; }
-.timeline-row-label { fill: var(--muted); font-size: 13px; font-weight: 900; opacity: .78; }
 .period-bar {
   filter: drop-shadow(0 7px 12px rgba(82,44,18,.16));
   transition: filter .16s ease, opacity .16s ease;
