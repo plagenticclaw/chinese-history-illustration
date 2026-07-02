@@ -4,6 +4,7 @@ A static GitHub Pages site for a Traditional Chinese children's introduction to 
 
 ## Site
 
+- Live GitHub Pages URL: <https://plagenticclaw.github.io/chinese-history-illustration/>
 - Entry page: `index.html`
 - Styles: `assets/styles.css`
 - Small navigation script: `assets/app.js`
